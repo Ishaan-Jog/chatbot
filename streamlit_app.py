@@ -1,10 +1,22 @@
 import streamlit as st
 import google.generativeai as genai
-import time
+import time, os
+
+# Set page layout
+st.set_page_config(
+    page_title="ChatBot",
+    page_icon="💬",
+    layout="wide",
+    initial_sidebar_state="auto",
+)
 
 # Configure the model
-my_api_key = "API_KEY"  # enter your API key
-genai.configure(api_key=my_api_key)
+api_key = st.secrets.get("API_KEY") or os.getenv("GOOGLE_API_KEY")
+
+if not api_key:
+    st.error("API key not found. Please set GOOGLE_API_KEY environment variable on your system.")
+else:
+    genai.configure(api_key=api_key)
 
 if "chat" not in st.session_state:
     model = genai.GenerativeModel("gemini-2.5-flash")
@@ -13,13 +25,13 @@ if "chat" not in st.session_state:
             "role": "user",
             "parts": [
                 "You are a chatbot named ChatBot. Speak in a friendly, Gen-Z tone. Be helpful, casual, and slightly witty. Answer clearly and keep responses short unless asked to explain in detail."
-            ]
+            ]  # you may change this for personalization
         }
     ])
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-st.title("Gemini ChatBot 🤖")
+st.title("ChatBot")
 
 # Show past chat
 for msg in st.session_state.messages:
