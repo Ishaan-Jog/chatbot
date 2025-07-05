@@ -1,18 +1,22 @@
-# 🎈 Blank app template
-
-A simple Streamlit app template for you to modify!
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+# ChatBot
+## created by Ishaan Jog
 
 ### How to run it on your own machine
 
-1. Install the requirements
+1. Download the source code.
+2. Install the requirements
 
    ```
    $ pip install -r requirements.txt
    ```
+3. Add your API key
 
-2. Run the app
+   ```
+   (line 6) my_api_key = "API_KEY"
+   ```
+
+   You can get or create your API key from (https://aistudio.google.com/app/apikey)
+4. Run the app
 
    ```
    $ streamlit run streamlit_app.py
