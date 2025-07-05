@@ -15,7 +15,7 @@
    (line 6) my_api_key = "API_KEY"
    ```
 
-   You can get or create your API key from (https://aistudio.google.com/app/apikey)
+   You can get or create your own API key from (https://aistudio.google.com/app/apikey)
 4. Run the app
 
    ```
