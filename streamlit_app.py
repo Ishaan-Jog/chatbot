@@ -6,9 +6,24 @@ import time, os
 st.set_page_config(
     page_title="ChatBot",
     page_icon="💬",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="auto",
 )
+
+col1, col2 = st.columns([8, 1])
+
+with col1:
+    st.markdown("# ChatBot 🤖")
+
+with col2:
+    # Trash icon with tooltip
+    clear = st.button("🗑️", help="Clear Chat", key="clear_btn")
+
+# Clear chat logic
+if clear:
+    st.session_state.messages = []
+    st.success("Chat cleared. You can refresh the page if you want ChatBot to forget the previous conversation.")
+    st.rerun()  # Refresh to clear UI
 
 # Configure the model
 api_key = st.secrets.get("API_KEY") or os.getenv("GOOGLE_API_KEY")
@@ -30,8 +45,6 @@ if "chat" not in st.session_state:
     ])
 if "messages" not in st.session_state:
     st.session_state.messages = []
-
-st.title("ChatBot")
 
 # Show past chat
 for msg in st.session_state.messages:
