@@ -5,7 +5,7 @@
 ---
 
 ## Direct usage
-You can visit [iamchatbot.streamlit.app] to directly access ChatBot.
+You can visit [iamchatbot.streamlit.app](iamchatbot.streamlit.app) to directly access ChatBot.
 
 ---
 
