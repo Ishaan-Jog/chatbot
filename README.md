@@ -4,7 +4,12 @@
 
 ---
 
-## Installation
+## Direct usage
+You can visit [iamchatbot.streamlit.app] to directly access ChatBot.
+
+---
+
+## Developer installation
 
 1. **Download the source code.**
 2. **Install the requirements**
