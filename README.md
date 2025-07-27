@@ -11,7 +11,7 @@ You can visit [iamchatbot.streamlit.app](https://iamchatbot.streamlit.app) to di
 
 ## Developer installation
 
-1. **Download the source code.**
+1. **Download the source code.** (`git clone https://github.com/Ishaan-Jog/chatbot.git && cd chatbot`)
 2. **Install the requirements**
 
    ```
