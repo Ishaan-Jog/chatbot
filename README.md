@@ -5,7 +5,7 @@
 ---
 
 ## Direct usage
-You can visit [iamchatbot.streamlit.app](https://iamchatbot.streamlit.app) to directly access ChatBot.
+You can visit [iamchatbot.streamlit.app](https://iamchatbot.streamlit.app) to directly access the web-hosted version of ChatBot.
 
 ---
 
@@ -100,4 +100,11 @@ export GOOGLE_API_KEY=your-api-key-here
 
 ---
 
-Hope you have a delightful experience!
+Created using:
+   - [Google Gemini API](https://aistudio.google.com)
+   - [Python 3.10](https://www.python.org)
+   - [Streamlit](https://streamlit.io)
+
+---
+
+Hope you enjoy!
