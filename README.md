@@ -11,13 +11,17 @@ You can visit [iamchatbot.streamlit.app](https://iamchatbot.streamlit.app) to di
 
 ## Developer installation
 
-1. **Download the source code.** (`git clone https://github.com/Ishaan-Jog/chatbot.git && cd chatbot`)
-2. **Install the requirements**
+1. **Download the source code and go into the project directory**
+
+   ```
+   $ git clone https://github.com/Ishaan-Jog/chatbot.git && cd chatbot
+   ```
+3. **Install the requirements**
 
    ```
    $ pip install -r requirements.txt
    ```
-3. **Add Your API Key**
+4. **Add Your API Key**
 
     1. **Get your API key:**  
     Visit [Google AI Studio](https://aistudio.google.com/app/apikey) and generate your own Gemini API key.
@@ -25,9 +29,9 @@ You can visit [iamchatbot.streamlit.app](https://iamchatbot.streamlit.app) to di
     2. **Set the environment variable:**  
     Set the key as an environment variable named `GOOGLE_API_KEY` on your system.
 
-        > 🔽 Need help? Check the steps below for setting environment variables on **Windows**, **macOS**, and **Linux**.
+        > 🔽 Need help? Scroll down for instructions to set environment variables on **Windows**, **macOS**, and **Linux**.
 
-4. Run the app
+5. Run the app
 
    ```
    $ streamlit run streamlit_app.py
