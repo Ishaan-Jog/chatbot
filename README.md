@@ -1,5 +1,5 @@
 # ChatBot
-#### an AI chatbot based on Gemini 2.5 Flash
+#### an AI chatbot based on Gemini 2.5 Pro
 #### created by Ishaan Jog
 
 ---
