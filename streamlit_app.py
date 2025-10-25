@@ -34,12 +34,12 @@ else:
     genai.configure(api_key=api_key)
 
 if "chat" not in st.session_state:
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-pro")
     st.session_state.chat = model.start_chat(history=[
         {
             "role": "user",
             "parts": [
-                "You are a chatbot named ChatBot. Speak in a friendly, Gen-Z tone. Be helpful, casual, and slightly witty. Answer clearly and keep responses short unless asked to explain in detail."
+                "You are a chatbot named ChatBot. Speak in a friendly, Gen-Z tone. Be helpful, casual, and friendly just like a best friend. Answer clearly and keep responses short unless asked to explain in detail."
             ]  # you may change this for personalization
         }
     ])
